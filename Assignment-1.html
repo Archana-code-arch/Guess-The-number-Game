@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link href="header_footer_style.css" rel="stylesheet">
+    <style>
+        body{
+            background-color: darkcyan;
+        }
+         .cover {
+      position: relative;
+      width: 100%;
+      height: 80%;
+      background-color:aquamarine;
+      border-radius: 12px;
+    }
+    .child:hover {
+      transform: translateY(-50px);
+    }
+
+    .scroll-images {
+      width: 100%;
+      height: auto;
+      padding-top: 5px;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      overflow: auto;
+      position: relative;
+      scroll-behavior: smooth;
+    }
+
+    .child {
+      min-width: 300px;
+      height: 400px;
+      margin: 1px 10px;
+      padding: 5px;
+      cursor: pointer;
+      border: 1px solid white;
+      overflow: hidden;
+      background-color: cornsilk;
+      border-radius: 20px;
+    }
+
+    .child-img {
+      width: 100%;
+      height: 70%;
+      border-radius: 20px;
+    }
+
+    .icon {
+      color: rgb(67, 247, 76);
+      background-color: black;
+      font-size: 50px;
+      outline: none;
+      border: none;
+      padding: 0px 20px;
+      cursor: pointer;
+    }
+
+    .scroll-images::-webkit-scrollbar {
+      -webkit-appearance: none;
+    }
+    .cen1 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5px;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!---Navbar --->
+        <div class="head sticky-top ">
+            <img src="AP.png" alt="LOGO" height="70px" width="70px" class="center" />
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="#">
+                        <img class="img img-fluid img-thumbnail" src="logo.jpg" width="40px" height="50px" />
+                    </a>
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav nav-pills me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Game_Rules.html" class="nav-link text-white">Game Rules</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="About.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Contact_page.html" class="nav-link text-white">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="LogIn.html" class="nav-link text-white">Log Out</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+        <!--Banner session-->
+        <div class="image card">
+            <img src="head.jpg" alt="" width="100%" height="400px" style="border-radius: 15px; border: solid black;">
+            <div class="card-img-overlay d-grid justify-content-center 
+            align-content-center fw-bold">
+                <button class="btn btn-light btn-lg"><a href="Game.html" style="text-decoration: none;">Play
+                        Now!!</a></button>
+            </div>
+        </div>
+        </div><br>
+        <!---Two main game banner-->
+        <div class="container mt-2">
+            <div class="row mt-2">
+                <div class="col-sm-6">
+                    <div class="card w-100">
+                        <div class="card-header">
+                            <h4>Guess Number Game</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="image">
+                                <img src="guess_game.jpg" class="img-fluid img-thumbnail bg-dark">
+                            </div>
+                            <div class="text mt-2">
+                                <p class="h5">
+                                    Play the game now for your enjoy and score the highest score.
+                                </p>
+                                <p class="h5">
+                                    Retting:<span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-lg btn-outline-dark">Play</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Memory Game</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="image">
+                                <img src="memory_game.jpg" class="img-fluid img-thumbnail bg-dark">
+                            </div>
+                            <div class="text mt-2">
+                                <p class="h5">
+                                    Play the game now for your enjoy and score the highest score.
+                                </p>
+                                <p class="h5">
+                                    Retting:<span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-lg btn-outline-dark">Play</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <!---Slider-->
+        <!-- <div class="text-center h3">Recently Product Buy</div> -->
+        <div class="cover">
+          <div class="scroll-images">
+            <div class="child h5">
+                <img class="child-img" src="game1.jpg" alt="IMG">
+                <button class="btn btn-lg btn-outline-dark cen1">Play</button>
+                <span>Ratting:
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </span>
+            </div>
+            <div class="child h5">
+                <img class="child-img" src="game2.jpg" alt="IMG">
+                <button class="btn btn-lg btn-outline-dark cen1">Play</button>
+                <span>Ratting:
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </span>
+            </div>
+            <div class="child h5">
+                <img class="child-img" src="game3.jpg" alt="IMG">
+                <button class="btn btn-lg btn-outline-dark cen1">Play</button>
+                <span>Ratting:
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                </span>
+            </div>
+            <div class="child h5">
+                <img class="child-img" src="game4.jpg" alt="IMG">
+                <button class="btn btn-lg btn-outline-dark cen1">Play</button>
+                <span>Ratting:
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </span>
+            </div>
+            <div class="child h5">
+                <img class="child-img" src="game5.jpg" alt="IMG">
+                <button class="btn btn-lg btn-outline-dark cen1">Play</button>
+                <span>Ratting:
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </span>
+            </div>
+            <div class="child h5">
+                <img class="child-img" src="game6.jpg" alt="IMG">
+                <button class="btn btn-lg btn-outline-dark cen1">Play</button>
+                <span>Ratting:
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                </span>
+            </div>
+            <div class="child h5">
+                <img class="child-img" src="game7.jpg" alt="IMG">
+                <button class="btn btn-lg btn-outline-dark cen1">Play</button>
+                <span>Ratting:
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </span>
+            </div>
+          </div>
+        </div>
+    </header>
+
+
+    <!---Footer Part-->
+    <br><br>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <a href="#" class="social-icons"><i class="fa-sharp fa-solid fa-location-pin"></i></a>
+                    <address>
+                        Written by <a href="About.html">Archana Prajapati</a>.<br>
+                        Visit us at:Covrize IT Solution Pvt Ltd <br>
+                        Mail :<a href="mailto:Archana.p@covrize.com"> Archana.p@covrize.com</a>.<br>
+                        3, Gokul Green Residency,<br>
+                        Mehsana, Gujrat.<br>
+                        India
+                    </address>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="Game_Rules.html">Game Rules</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="Contact_page.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+                        <a href="#">Archana</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a class="instagram" href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

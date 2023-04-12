@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link href="header_footer_style.css" rel="stylesheet">
+    <script src="validation.js"></script>
+    <style>
+        body {
+            background: #383a3d;
+        }
+
+        #form1 {
+            background-color: darkgray;
+        }
+
+        #a1 {
+            text-decoration: none;
+            color: white;
+        }
+
+        .form-container {
+            border-radius: 10px;
+            padding: 30px;
+        }
+
+        .center1 {
+            margin-left: 40%;
+        }
+
+        .center1:hover {
+            background-color: cadetblue;
+        }
+
+        .media-options a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        a.facebook {
+            color: white;
+            background-color: blue;
+            text-decoration: none;
+        }
+
+        a.facebook .facebook-icon {
+            height: 28px;
+            width: 28px;
+            color: white;
+            font-size: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+        }
+
+        .facebook-icon {
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+        }
+
+        img.google-img {
+            height: 20px;
+            width: 20px;
+            object-fit: cover;
+        }
+
+        a.google {
+            border: 1px solid black;
+            text-decoration: none;
+        }
+
+        a.google span {
+            font-weight: 500;
+            opacity: 0.6;
+            color: white;
+        }
+    </style>
+  
+</head>
+
+<body>
+    <header>
+        <div class="head sticky-top ">
+            <img src="AP.png" alt="LOGO" height="70px" width="70px" class="center" />
+            <!-- <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="#">
+                        <img class="img img-fluid img-thumbnail" src="logo.jpg" width="40px" height="50px" />
+                    </a>
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav nav-tabs me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="Assignment-1.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white">Game Rules</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="About.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="LogIn.html" class="nav-link text-white">Sign In</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav> -->
+        </div>
+        <section class="container-fluid">
+            <section class="row justify-content-center">
+                <section class="col-12 col-sm-6 col-md-4">
+                    <form class="form-container" id="form1" action="Assignment-1.html">
+                        <div class="form-group">
+                            <h4 class="text-center font-weight-bold"> Login </h4>
+                            <label for="InputEmail1" class="mt-2">Email Address</label>
+                            <input type="email" class="form-control mt-2" id="email11" placeholder="Enter email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="InputPassword1" class="mt-2">Password</label>
+                            <input type="password" class="form-control mt-2" id="password11" placeholder="Password"  required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <a href="#" id="a1">Forgot Password ?</a>
+                        </div>
+                        <button type="submit" class="btn btn-outline-primary mt-4 center1" onclick="validateLoginForm()">Log in</a></button>
+                        <div class="form-footer">
+                            <p class="mt-3"> Don't have an account? <a id="a1" href="SignUp.html">Sign Up</a></p>
+                        </div>
+                        <div class="media-options mt-3">
+                            <a href="https://www.facebook.com/" id="a1" class="field facebook">
+                                <i class="fa-brands fa-square-facebook"></i>
+                                <span>Login with Facebook</span>
+                            </a>
+                        </div>
+
+                        <div class="media-options mt-3">
+                            <a href="https://accounts.google.com/Login" id="a1" class="field google">
+                                <i class="fa-brands fa-google"></i>
+                                <span>Login with Google</span>
+                            </a>
+                        </div>
+                    </form>
+                </section>
+            </section>
+        </section>
+    </header>
+
+    <!---Footer part-->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <a href="#" class="social-icons"><i class="fa-sharp fa-solid fa-location-pin"></i></a>
+                    <address>
+                        Written by <a href="About.html">Archana Prajapati</a>.<br>
+                        Visit us at:Covrize IT Solution Pvt Ltd <br>
+                        Mail :<a href="mailto:Archana.p@covrize.com"> Archana.p@covrize.com</a>.<br>
+                        3, Gokul Green Residency,<br>
+                        Mehsana, Gujrat.<br>
+                        India
+                    </address>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Game Rules</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#"> Sign In</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+                        <a href="#">Archana</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a class="instagram" href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

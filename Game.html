@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="game.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link href="header_footer_style.css" rel="stylesheet">
+<style>
+    body{
+        background-color: darkolivegreen;
+    }
+#btw {
+    float: right;
+    margin-top: 0px;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#again {
+    float: left;
+    width: 100px;
+    height: 60px;
+}
+#again:hover{
+    background-color: aqua;
+}
+
+.container1 {
+    padding-top: 10px;
+    margin: 20px;
+    height: 40px;
+}
+.random{
+    text-align: center;
+    border: solid;
+    height: 42px;
+    width: 81px;
+    margin-top: -3px;
+}
+hr.horLine{
+    border: 4px dotted black;
+    width: 100%;
+}
+p{
+    font-size: large;
+    font-style: italic;
+    color: white;
+}
+
+
+</style>
+</head>
+
+<body>
+    <header>
+        <div class="head sticky-top ">
+            <img src="AP.png" alt="LOGO" height="70px" width="70px" class="center" />
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="#">
+                        <img class="img img-fluid img-thumbnail" src="logo.jpg" width="40px" height="50px" />
+                    </a>
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav nav-tabs me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="Assignment-1.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Game_Rules.html" class="nav-link text-white">Game Rules</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="About.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Contact_page.html" class="nav-link text-white">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="LogIn.html" class="nav-link text-white">Log Out</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+        <audio id="myAudio">
+            <source src="music.mp3" type="audio/ogg">
+        </audio>
+        <!-- <audio id="myAudio1">
+            <source src="simple.mp3" type="audio/ogg">
+        </audio> -->
+        <div class="container1">
+            <button id="again" onclick="restart()">Again</button>
+            <p id="btw">Between 1 to 20</p>
+        </div>
+        <br>
+        <div id="safeTimer">
+            <p id="timeover"></p>
+            <p id="safeTimerDisplay"></p>
+            </div>
+        <div style="text-align:center;">
+            <h2 style="text-align: center;color: white;">Guesss My Number!</h2>
+    
+    
+    
+            <div class="container1">
+                <div class="row position-relative">
+                    <div class="col">
+                        <hr class="horLine">
+                    </div>
+                    <div class="col position-absolute">
+                        <button class="random">?</button>
+                    </div>
+                </div>
+            </div>
+    
+    
+    
+            <br> <br>
+    
+            <input type="number" id="inputNum" name="quantity">
+            <br><br>
+            <button id="myBtn" onclick="checkaInput();"
+            style="background-color:#c8ce4d;width:100px;height: 60px;">Check!!!</button>
+    
+            <p id="display">Start guessing...</p>
+    
+            <p>score: <span id="score">20</span></p>
+            <p>High score: <span id="highscore">0</span></p>
+            <!-- <button  onclick="highalltime()"  style="background-color:coral;width:100px;height: 60px;">Total Score</button>
+            <p id="highall"></p> -->
+    
+        </div>
+    
+    </header>
+   
+    <!---Footer-->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <a href="#" class="social-icons"><i class="fa-sharp fa-solid fa-location-pin"></i></a>
+                    <address>
+                        Written by <a href="About.html">Archana Prajapati</a>.<br>
+                        Visit us at:Covrize IT Solution Pvt Ltd <br>
+                        Mail :<a href="mailto:Archana.p@covrize.com"> Archana.p@covrize.com</a>.<br>
+                        3, Gokul Green Residency,<br>
+                        Mehsana, Gujrat.<br>
+                        India
+                    </address>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="Assignment-1.html">Home</a></li>
+                        <li><a href="Game_Rules.html">Game Rules</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="Contact_page.html">Contact Us</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+                        <a href="#">Archana</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a class="instagram" href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link href="header_footer_style.css" rel="stylesheet">
+    <link href="Contact.css" rel="stylesheet">
+    <script>
+
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="head sticky-top ">
+            <img src="AP.png" alt="LOGO" height="70px" width="70px" class="center" />
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="#">
+                        <img class="img img-fluid img-thumbnail" src="logo.jpg" width="40px" height="50px" />
+                    </a>
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav nav-tabs me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="Assignment-1.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Game_Rules.html" class="nav-link text-white">Game Rules</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="About.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Contact_page.html" class="nav-link text-white">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="LogIn.html" class="nav-link text-white">Log Out</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- <div class="container">
+            <button onclick="getLocation()">Get Your Location</button>
+            <p id="demo" style="color:white"></p>
+        </div> -->
+
+        <!---Contact form-->
+        <section>
+            <div class="rt-container">
+                <div class="col-rt-12">
+                    <div class="Scriptcontent">
+
+                        <div>
+                            <div class="container">
+                                <div class="contact-parent">
+                                    <div class="contact-child child1">
+                                        <p>
+                                            <i class="fas fa-map-marker-alt"></i> Address <br />
+                                            <span> Gokul Green 3
+                                                <br />
+                                                Mehsana , Gujarat
+                                            </span>
+                                        </p>
+                                      
+                                        <p>
+                                            <i class="fas fa-phone-alt"></i> Let's Talk <br />
+                                            <span> 0787878787</span>
+                                        </p>
+
+                                        <p>
+                                            <i class=" far fa-envelope"></i> General Support <br />
+                                            <span>contact@example.com</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="contact-child child2">
+                                        <div class="inside-contact">
+                                            <h2>Contact Us</h2>
+                                            <h3>
+                                                <span id="confirm">
+                                            </h3>
+
+                                            <p>Name *</p>
+                                            <input id="txt_name" type="text" Required="required">
+
+                                            <p>Email *</p>
+                                            <input id="txt_email" type="text" Required="required">
+
+                                            <p>Phone *</p>
+                                            <input id="txt_phone" type="text" Required="required">
+
+                                            <p>Subject *</p>
+                                            <input id="txt_subject" type="text" Required="required">
+
+                                            <p>Message *</p>
+                                            <textarea id="txt_message" rows="4" cols="20"
+                                                Required="required"></textarea>
+
+                                            <input type="submit" id="btn_send" value="SEND">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+    </header>
+    <!---Footer Part-->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <a href="#" class="social-icons"><i class="fa-sharp fa-solid fa-location-pin"></i></a>
+                    <address>
+                        Written by <a href="About.html">Archana Prajapati</a>.<br>
+                        Visit us at:Covrize IT Solution Pvt Ltd <br>
+                        Mail :<a href="mailto:Archana.p@covrize.com"> Archana.p@covrize.com</a>.<br>
+                        3, Gokul Green Residency,<br>
+                        Mehsana, Gujrat.<br>
+                        India
+                    </address>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="Assignment-1.html">Home</a></li>
+                        <li><a href="Game_Rules.html">Game Rules</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="Contact_page.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+                        <a href="#">Archana</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a class="instagram" href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
